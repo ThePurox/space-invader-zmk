@@ -1,0 +1,17 @@
+if ZPLIT_ZALP_LEFT
+
+# Name must be less than 16 characters long!
+config ZMK_KEYBOARD_NAME
+    default "Space Invader"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SPACE_INVADER_LEFT || SPACE_INVADER_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

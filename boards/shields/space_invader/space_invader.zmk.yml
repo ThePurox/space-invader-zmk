@@ -1,0 +1,11 @@
+file_format: "1"
+id: space_invader
+name: SPACE_INVADER
+type: shield
+url: https://github.com/ThePurox/space-invador
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
+siblings:
+  - space_invader_left
+  - space_invader_right

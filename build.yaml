@@ -1,0 +1,7 @@
+include:
+  - board: seeeduino_xiao_ble
+    shield: space_invader_left
+  - board: seeeduino_xiao_ble
+    shield: space_invader_right
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
