@@ -1,0 +1,76 @@
+#include "base_zplitzalp.h"
+
+
+// zplitzalp key numbers
+//     __________________________  __________________________
+//    /     0  |  1  |  2  |  3  \/   4 |   5 |   6 |   7    \
+// |  8  |  9  | 10  | 11  | 12  /\  13 |  14 |  15 |  16 | 17  |
+//    \    18  | 19  | 20    /        \    21 |  22 |  23   /
+//          \    24  | 25  /            \  26 |  27    /
+//           --------------              --------------
+
+/ {
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        aptmak {
+            label = "APT";
+
+            bindings = <
+                &kp V          &kp W          &kp F          &kp P          &kp K          &kp J          &kp L          &kp U          &kp DE_Y       &kp DE_Y
+                &hl LCTRL R    &hl LALT S     &hl LGUI T     &hl LSHFT H    &hl RALT B     &hr RALT X     &hr RSHFT N    &hr RGUI A     &hr LALT I     &hr RCTRL O
+                               &kp G          &kp C          &kp D                                        &kp M          &kp DE_COMMA   &kp DE_DOT
+                &my_lt NUM ESC  &my_lt NAV SPACE         &my_lt NUM ESC  &my_lt NAV SPACE  &my_lt SYM E  &my_lt DE ENTER                &my_lt SYM E  &my_lt DE ENTER
+            >;
+        };
+        numbers {
+            label = "NUM";
+
+            bindings = <
+                &trans         &kp F1         &kp F2         &kp F3         &kp DE_STAR        &kp DE_PLUS     &kp N1         &kp N2         &kp N3         &kp DE_STAR
+                &hl LCTRL F10  &hl LALT F4    &hl LGUI F5    &hl LSHFT F6   &hl RALT DE_FSLH   &kp DE_MINUS    &kp N4         &kp N5         &kp N6         &kp DE_DOT
+                               &kp F7         &kp F8         &kp F9                                            &kp N7         &kp N8         &kp N9
+                &trans         &trans                        &trans         &trans             &kp E           &kp N0                        &kp E           &kp N0
+            >;
+        };
+        navigation {
+            label = "NAV";
+
+            bindings = <
+                &trans         &kp INSERT     &kp UP         &kp BSPC        &kp C_VOL_DN   &kp C_VOL_UP   &kp BSPC       &kp DEL        &kp INSERT     &trans
+                &kp LCTRL      &hl LALT LEFT  &hl LGUI DOWN  &hl LSHFT RIGHT &kp C_MUTE     &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT      &kp TAB
+                               &kp HOME       &kp PG_DN      &kp END                                       &kp HOME       &kp PG_UP      &kp END
+                &trans         &trans                        &trans          &trans         &trans         &trans
+            >;
+        };
+        symbols {
+            label = "SYM";
+
+            bindings = <
+                &trans         &kp GRAVE      &kp DE_DQT     &kp RA(LS(SEMI)) &kp LBRC       &kp DE_QMARK    &kp DE_APOS    &kp DE_DQT     &kp DE_CARET   &trans
+                &kp DE_BSLH    &kp DE_AT      &kp DE_HASH    &kp DOLLAR       &kp LPAR       &kp DE_EXCL     &kp DE_PLUS    &kp DE_MINUS   &kp DE_STAR    &kp DE_FSLH
+                               &kp TILDE      &kp DE_SQT     &kp UNDERSCORE                                  &kp DE_EQUAL   &kp DE_HASH    &kp EQUAL
+                &trans         &trans                        &kp LBKT         &kp RBKT       &trans          &trans                        &trans         &trans
+            >;
+        };
+        function {
+            label = "DE";
+
+            bindings = <
+                &trans         &kp DE_AT      &kp DE_EURO    &trans         &trans         &trans       &trans        &kp DE_UE     &trans        &trans
+                &bootloader    &kp DE_SZ      &trans         &trans         &trans         &trans       &trans        &kp DE_AE     &trans        &kp DE_OE
+                               &trans         &trans         &trans                                     &trans        &trans        &trans
+                &trans         &trans                        &trans         &trans         &trans       &trans                      &trans        &trans
+            >;
+        };
+
+    };
+};
+
+//     __________________________  __________________________
+//    /     1  |  2  |  3  |  4  \/   5 |   6 |   7 |   8    \
+// | 10  | 11  | 12  | 13  | 14  ||  15 |  16 |  17 |  18 | 19  |
+//    \    20  | 21  | 22  |     ||     |  23 |  24 |  25   /
+//                \    26  | 27  /\  28 |  29    /
+//                 --------------  --------------
