@@ -14,10 +14,30 @@
 //     quick_tap_ms = <170>;
 // };
 
+// space invader key numbers
+//  _____________________________  _____________________________
+// /  0  |  1  |  2  |  3  |  4  \/   5 |   6 |   7 |   8 |  9  \
+// | 10  | 11  | 12  | 13  | 14  /\  15 |  16 |  17 |  18 | 19  |
+//       / 20  | 21  | 22  \            /  23 |  24 |  25 \
+// \ 26  | 27          28    29  \/  30 |  31          32 | 33  /
+//           --------------              --------------
+
 &caps_word {
     continue-list = <UNDERSCORE MINUS BSPC LSHFT RSHFT>;
 };
 
+
+/ {
+  macros {
+  macro_sch:
+    macro_sch {
+      label = "Macro_sch";
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&macro_tap &kp S &macro_release &kp RSHIFT &macro_tap &kp C &kp H>;
+    };
+  };
+};
 
 / {
     combos {
@@ -25,116 +45,77 @@
 /* usually on base layer */
         combo_q {
             timeout-ms = <40>;
-            key-positions = <1 2>;
+            key-positions = <2 3>;
             bindings = <&kp Q>;
             layers = <APT>;
         };
         combo_z {
             timeout-ms = <40>;
-            key-positions = <18 19>;
+            key-positions = <20 21>;
             bindings = <&kp DE_Z>;
         };
         combo_v {
             timeout-ms = <40>;
-            key-positions = <0 1>;
+            key-positions = <1 2>;
             bindings = <&kp V>;
             layers = <APT>;
         };
-        combo_slash {
+        combo_k {
             timeout-ms = <40>;
-            key-positions = <22 23>;
-            bindings = <&kp SLASH>;
+            key-positions = <12 13>;
+            bindings = <&kp K>;
+            layers = <APT>;
         };
-        combo_minus {
+        combo_x {
             timeout-ms = <40>;
-            key-positions = <21 22>;
-            bindings = <&kp MINUS>;
+            key-positions = <16 17>;
+            bindings = <&kp X>;
+            layers = <APT>;
+        };
+        combo_j {
+            timeout-ms = <40>;
+            key-positions = <6 17>;
+            bindings = <&kp J>;
+            layers = <APT>;
+        };
+        combo_sch {
+            timeout-ms = <40>;
+            key-positions = <11 13>;
+            bindings = <&macro_sch>;
+            layers = <APT>;
         };
         combo_esc {
             timeout-ms = <40>;
-            key-positions = <19 20>;
+            key-positions = <21 22>;
             bindings = <&kp ESC>;
         };
 /* parentheticals */
-        combo_lbrc {
-            timeout-ms = <40>;
-            key-positions = <0 9>;
-            bindings = <&kp DE_LBRC>;
-        };
-        combo_lbkt {
-            timeout-ms = <40>;
-            key-positions = <1 10>;
-            bindings = <&kp DE_LBKT>;
-        };
-        combo_lpar {
-            timeout-ms = <40>;
-            key-positions = <2 11>;
-            bindings = <&kp DE_LPAR>;
-        };
-        combo_lt {
-            timeout-ms = <40>;
-            key-positions = <3 12>;
-            bindings = <&kp DE_LT>;
-        };
-        combo_gt {
-            timeout-ms = <40>;
-            key-positions = <4 13>;
-            bindings = <&kp DE_GT>;
-        };
-        combo_rpar {
-            timeout-ms = <40>;
-            key-positions = <5 14>;
-            bindings = <&kp DE_RPAR>;
-        };
-        combo_rbkt {
-            timeout-ms = <40>;
-            key-positions = <6 15>;
-            bindings = <&kp DE_RBKT>;
-        };
-        combo_rbrc {
-            timeout-ms = <40>;
-            key-positions = <7 16>;
-            bindings = <&kp DE_RBRC>;
-        };
 /* caps */
         combo_caps-word {
             timeout-ms = <40>;
-            key-positions = <11 14>;
+            key-positions = <13 16>;
             bindings = <&caps_word>;
         };
         combo_capslock {
             timeout-ms = <40>;
-            key-positions = <0 7>;
+            key-positions = <0 9>;
             bindings = <&kp CAPSLOCK>;
         };
 /* deletion */
         combo_bspc {
             timeout-ms = <40>;
-            key-positions = <5 6>;
+            key-positions = <6 7>;
             bindings = <&kp BSPC>;
         };
         combo_del {
             timeout-ms = <40>;
-            key-positions = <6 7>;
+            key-positions = <7 8>;
             bindings = <&kp DEL>;
         };
         combo_delword {
             timeout-ms = <40>;
-            key-positions = <5 7>;
+            key-positions = <6 8>;
             bindings = <&kp LC(BSPC)>;
-        };
-/*F keys*/
-        combo_F11 {
-          timeout-ms = <40>;
-          key-positions = <0 1>;
-          layers = <NUM>;
-          bindings = <&kp F11>;
-        };
-        combo_F12 {
-          timeout-ms = <40>;
-          key-positions = <1 2>;
-          layers = <NUM>;
-          bindings = <&kp F12>;
         };
     };
 };
