@@ -60,11 +60,17 @@
             bindings = <&kp V>;
             layers = <APT>;
         };
+        combo_b {
+          timeout - ms = <40>;
+          key - positions = <12 3>;
+          bindings = <&kp B>;
+          layers = <APT>;
+        };
         combo_k {
-            timeout-ms = <40>;
-            key-positions = <12 13>;
-            bindings = <&kp K>;
-            layers = <APT>;
+          timeout - ms = <40>;
+          key - positions = <12 13>;
+          bindings = <&kp K>;
+          layers = <APT>;
         };
         combo_x {
             timeout-ms = <40>;
