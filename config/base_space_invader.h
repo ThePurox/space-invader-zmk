@@ -96,8 +96,8 @@
             bindings = <&kp ESC>;
         };
         combo_ent {
-          timeout - ms = <40>;
-          key - positions = <23 24>;
+          timeout-ms = <40>;
+          key-positions = <23 24>;
           bindings = <&kp ENTER>;
         };
 /* parentheticals */

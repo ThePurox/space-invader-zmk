@@ -21,7 +21,7 @@
                 &kp V          &kp W          &kp F          &kp P          &kp B          &kp J          &kp L          &kp DE_Y       &kp DE_U       &kp DE_Z
                 &hl LCTRL R    &hl LALT S     &hl LGUI T     &hl LSHFT H    &hl RALT K     &hr RALT X     &hr RSHFT N    &hr RGUI A     &hr LALT I     &hr RCTRL O
                                &kp C          &kp G          &kp D                                        &kp M          &kp DE_COMMA   &kp DE_DOT
-                &my_lt SYM ESC  &my_lt NUM SPACE         &my_lt DE ESC  &my_lt NAV SPACE  &my_lt SYM E  &my_lt NUM ENTER                &my_lt DE E  &my_lt NAV ENTER
+                &my_lt SYM ESC  &my_lt NUM SPACE         &my_lt DE ESC  &my_lt NAV SPACE  &my_lt SYM E  &my_lt NUM TAB                &my_lt DE E  &my_lt NAV TAB
             >;
         };
         numbers {
