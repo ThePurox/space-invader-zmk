@@ -48,8 +48,8 @@
             label = "SYM";
 
             bindings = <
-                &trans         &kp GRAVE      &kp DE_DQT     &kp RA(LS(SEMI)) &kp LBRC       &kp DE_QMARK    &kp DE_APOS    &kp DE_DQT     &kp DE_CARET   &trans
-                &kp DE_BSLH    &kp DE_AT      &kp DE_HASH    &kp DOLLAR       &kp LPAR       &kp DE_EXCL     &kp DE_PLUS    &kp DE_MINUS   &kp DE_STAR    &kp DE_FSLH
+                &trans         &kp GRAVE      &kp DE_DQT     &kp RA(LS(SEMI)) &kp LBRC       &kp DE_EXCL     &kp DE_APOS    &kp DE_DQT     &kp DE_CARET   &trans
+                &kp DE_BSLH    &kp DE_AT      &kp DE_HASH    &kp DOLLAR       &kp LPAR       &kp DE_QMARK    &kp DE_PLUS    &kp DE_MINUS   &kp DE_STAR    &kp DE_FSLH
                                &kp TILDE      &kp DE_SQT     &kp UNDERSCORE                                  &kp DE_EQUAL   &kp DE_HASH    &kp EQUAL
                 &trans         &trans                        &kp LBKT         &kp RBKT       &trans          &trans                        &trans         &trans
             >;
