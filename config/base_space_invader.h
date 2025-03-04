@@ -67,16 +67,16 @@
           layers = <APT>;
         };
         combo_k {
-          timeout-ms = <40>;
+          timeout-ms = <20>;
           key-positions = <12 13>;
           bindings = <&kp K>;
           layers = <APT>;
         };
         combo_x {
-            timeout-ms = <40>;
-            key-positions = <16 17>;
-            bindings = <&kp X>;
-            layers = <APT>;
+          timeout-ms = <20>;
+          key-positions = <16 17>;
+          bindings = <&kp X>;
+          layers = <APT>;
         };
         combo_j {
             timeout-ms = <40>;
@@ -92,7 +92,7 @@
         };
         combo_esc {
             timeout-ms = <40>;
-            key-positions = <22 23>;
+            key-positions = <21 22>;
             bindings = <&kp ESC>;
         };
         combo_ent {
