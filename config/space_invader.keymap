@@ -28,8 +28,8 @@
             label = "NUM";
 
             bindings = <
-                &trans         &kp F1         &kp F2         &kp F3         &kp DE_STAR        &kp DE_PLUS     &kp N1         &kp N2         &kp N3         &kp DE_STAR
-                &hl LCTRL F10  &hl LALT F4    &hl LGUI F5    &hl LSHFT F6   &hl RALT DE_FSLH   &kp DE_MINUS    &kp N4         &kp N5         &kp N6         &kp DE_DOT
+                &trans         &kp F1         &kp F2         &kp F3         &kp DE_STAR        &kp DE_PLUS     &kp N1         &kp N2         &kp N3         &kp DE_MINUS
+                &hl LCTRL F10  &hl LALT F4    &hl LGUI F5    &hl LSHFT F6   &hl RALT DE_FSLH   &kp N0          &kp N4         &kp N5         &kp N6         &kp DE_DOT
                                &kp F7         &kp F8         &kp F9                                            &kp N7         &kp N8         &kp N9
                 &trans         &trans                        &trans         &trans             &kp E           &kp N0                        &kp E           &kp N0
             >;
