@@ -49,8 +49,8 @@
 
             bindings = <
                 &kp DE_ACUTE   &kp DE_GRAVE   &kp DE_LBRC    &kp DE_RBCR      &kp DE_QUES    &kp DE_EXCL     &kp DE_APOS    &kp DE_DQT     &kp DE_CARET   &trans
-                &kp DE_BSLH    &kp DE_AT      &kp DE_LPRN    &kp DE_RPRN      &kp DE_TILDE   &kp DE_EQUAL    &kp DE_PLUS    &kp DE_MINUS   &kp DE_STAR    &kp DE_FSLH
-                               &kp DE_TILDE   &kp DE_LCBR    &kp DE_RCBR                                     &kp DE_LABK    &kp DE_RABK    &kp DE_PIPE
+                &kp DE_BSLH    &kp DE_AT      &kp DE_LPAR    &kp DE_RPAR      &kp DE_TILDE   &kp DE_EQUAL    &kp DE_PLUS    &kp DE_MINUS   &kp DE_STAR    &kp DE_FSLH
+                               &kp DE_TILDE   &kp DE_LBKT    &kp DE_RBKT                                     &kp DE_LT      &kp DE_GT      &kp DE_PIPE
                 &trans         &trans                        &kp LBKT         &kp RBKT       &trans          &trans                        &trans         &trans
             >;
         };
