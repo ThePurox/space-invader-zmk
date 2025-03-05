@@ -90,15 +90,35 @@
             bindings = <&macro_sch>;
             layers = <APT>;
         };
-        combo_esc {
-            timeout-ms = <40>;
-            key-positions = <21 22>;
-            bindings = <&kp ESC>;
+        combo_sz {
+          timeout-ms = <30>;
+          key-positions = <30 11>;
+          bindings = <&kp DE_SZ>;
+        };
+        combo_ue {
+          timeout-ms = <30>;
+          key-positions = <30 8>;
+          bindings = <&kp DE_UE>;
+        };
+        combo_ae {
+          timeout-ms = <30>;
+          key-positions = <30 17>;
+          bindings = <&kp DE_AE>;
+        };
+        combo_oe {
+          timeout-ms = <30>;
+          key-positions = <30 19>;
+          bindings = <&kp DE_OE>;
         };
         combo_ent {
           timeout-ms = <40>;
           key-positions = <23 24>;
           bindings = <&kp ENTER>;
+        };
+        combo_esc {
+            timeout-ms = <40>;
+            key-positions = <21 22>;
+            bindings = <&kp ESC>;
         };
 /* parentheticals */
 /* caps */
